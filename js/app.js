@@ -37,7 +37,7 @@ function reset() {
 
 function rotate_wheel(dir, r) {
     let wheel = $('#wheel');
-    d = deg + r;
+    let d = deg + r;
 
     wheel.stop().animate({deg: d}, {
         step: function(now) {
