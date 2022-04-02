@@ -6,10 +6,10 @@ function initialize() {
     main_screen = $('.main-screen');
     high_score = $('.high-score');
     wheel = $('.wheel-wrapper');
-    audio_flip = new Audio('/assets/sounds/flip.mp3');
-    audio_ping = new Audio('/assets/sounds/ping.mp3');
-    audio_break = new Audio('/assets/sounds/break.mp3');
-    audio_music = new Audio('/assets/sounds/music.mp3');
+    audio_flip = new Audio('assets/sounds/flip.mp3');
+    audio_ping = new Audio('assets/sounds/ping.mp3');
+    audio_break = new Audio('assets/sounds/break.mp3');
+    audio_music = new Audio('assets/sounds/music.mp3');
 
     current_state = 0;
     is_stop = true;

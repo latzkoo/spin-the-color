@@ -161,7 +161,6 @@ h1 {
     border-radius: 15px;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.9);
     left: 50%;
-    top: 10%;
     transform: translateX(-50%);
     z-index: 1000;
     padding: 40px 30px 60px;
