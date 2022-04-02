@@ -10,15 +10,14 @@ embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, sect
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+div, span, button {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
 }
 
 body {

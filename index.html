@@ -24,7 +24,22 @@
             <div class="sound off" title="Hangok be/ki"></div>
             <div class="level">Level: <span>1</span></div>
             <div class="score">Score: <span>0</span></div>
+            <div class="player"></div>
+            <div class="main-screen">
+                <div class="label">Spin The Color</div>
+                <input type="text" class="name" name="name" spellcheck="false"
+                       autocomplete="off" placeholder="Your name" maxlength="12" autofocus />
+                <button type="button" class="play start">Start game</button>
+            </div>
+            <div class="high-score hidden">
+                <div class="label">Game Over</div>
+                <button type="button" class="play restart">Restart</button>
+                <button type="button" class="new">New Player</button>
+                <div class="label top">High Scores</div>
+                <div class="user-list"><div class="empty">A toplista jelenleg üres</div></div>
+            </div>
         </div>
     </div>
+    <div class="shadow"></div>
 </body>
 </html>

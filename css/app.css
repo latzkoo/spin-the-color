@@ -30,6 +30,7 @@ h1 {
     height: calc(100% - 160px);
     position: absolute;
     overflow: hidden;
+    border-radius: 5px;
 }
 .game-area .sound {
     background: url("../images/on.svg") center center no-repeat;
@@ -63,6 +64,16 @@ h1 {
 .game-area .score {
     float: right;
     margin: 30px 30px 0 0;
+}
+
+.game-area .player {
+    bottom: 30px;
+    right: 30px;
+    position: absolute;
+    color: #fff;
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .game-area .ball {
@@ -126,6 +137,140 @@ h1 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.main-screen {
+    position: absolute;
+    max-width: 400px;
+    width: calc(100% - 30px);
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.9);
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 40px 30px 60px;
+}
+
+.high-score {
+    position: absolute;
+    max-width: 400px;
+    width: calc(100% - 30px);
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.9);
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 40px 30px 60px;
+}
+
+.shadow {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+input.name {
+    border: 5px solid #30b2cc;
+    width: 100%;
+    padding: 15px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+    outline: none;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
+    color: #4b4b4b;
+    transition: border-color 150ms ease-in;
+}
+
+.label {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    color: #e2472a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.label.top {
+    margin-top: 45px;
+}
+
+input.name:focus {
+    border-color: rgba(48, 178, 204, 0.5);
+}
+
+button.play,
+button.new {
+    background: #53b76a;
+    color: #fff;
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 35px;
+    padding: 15px;
+    transition: background-color 150ms ease-in;
+    outline: none;
+}
+
+button.new {
+    background: #febe40;
+    margin-top: 15px;
+}
+
+button.play:hover,
+button.play:focus,
+button.play:active {
+    background: rgba(83, 183, 106, 0.85);
+}
+
+button.new:hover,
+button.new:focus,
+button.new:active {
+    background: rgba(254, 190, 64, 0.85);
+}
+
+.user-list {
+    float: left;
+    width: 100%;
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.user-list .empty {
+    width: 100%;
+    text-align: center;
+}
+
+.user-list .row {
+    float: left;
+    width: 100%;
+}
+
+.user-list .row .pos {
+    float: left;
+    width: 10%;
+}
+.user-list .row .user {
+    float: left;
+    width: 50%;
+}
+.user-list .row .pts {
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
 }
 
 @media screen and (min-width: 660px){
